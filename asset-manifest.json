@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-business-card/static/css/main.6c1b2aeb.chunk.css",
+    "main.js": "/react-business-card/static/js/main.aa1630b4.chunk.js",
+    "main.js.map": "/react-business-card/static/js/main.aa1630b4.chunk.js.map",
+    "runtime-main.js": "/react-business-card/static/js/runtime-main.4eedb0fa.js",
+    "runtime-main.js.map": "/react-business-card/static/js/runtime-main.4eedb0fa.js.map",
+    "static/js/2.01df1b1a.chunk.js": "/react-business-card/static/js/2.01df1b1a.chunk.js",
+    "static/js/2.01df1b1a.chunk.js.map": "/react-business-card/static/js/2.01df1b1a.chunk.js.map",
+    "index.html": "/react-business-card/index.html",
+    "static/css/main.6c1b2aeb.chunk.css.map": "/react-business-card/static/css/main.6c1b2aeb.chunk.css.map",
+    "static/js/2.01df1b1a.chunk.js.LICENSE.txt": "/react-business-card/static/js/2.01df1b1a.chunk.js.LICENSE.txt",
+    "static/media/myPic.43c40683.jpg": "/react-business-card/static/media/myPic.43c40683.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4eedb0fa.js",
+    "static/js/2.01df1b1a.chunk.js",
+    "static/css/main.6c1b2aeb.chunk.css",
+    "static/js/main.aa1630b4.chunk.js"
+  ]
+}
