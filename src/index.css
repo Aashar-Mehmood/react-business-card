@@ -2,20 +2,52 @@ a {
   text-decoration: none;
 }
 .container {
-  max-width: 380px;
+  max-width: 440px;
   margin: 20px auto;
-  padding: 3rem 2rem;
-  background: rgb(19, 19, 19);
-  color: white;
+  padding: 3rem;
   border-radius: 10px;
-  padding: 3rem 2rem;
+  transition: background-color, color 0.4s linear;
+  background-color: rgb(44, 44, 44);
+  color: white;
+}
+
+.toggler_wrapper {
+  display: flex;
+  width: 46%;
+  margin: 0 auto 20px auto;
+}
+
+.toggler_wrapper span {
+  margin-top: 3px;
+}
+
+.toggler {
+  cursor: pointer;
+  width: 64px;
+  height: 30px;
+  border-radius: 20px;
+  margin: 0 auto 20px auto;
+  position: relative;
+  transition: background-color 0.4s linear;
+  background-color: #fff;
+}
+.toggler .circle {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  height: 26px;
+  width: 26px;
+  border-radius: 100%;
+  transition: transform 0.4s linear;
+  background-color: #000;
 }
 
 .card {
-  background: rgb(34, 34, 34);
   padding: 2rem;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  transition: background-color 0.4s linear 0.1s;
+  background-color: rgb(34, 34, 34);
 }
 
 img {
@@ -24,6 +56,7 @@ img {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  border-radius: 8px;
 }
 
 #info {
@@ -37,7 +70,7 @@ img {
   color: rgb(210, 230, 247);
 }
 #info .description a {
-  color: white;
+  color: #fff;
 }
 .btns {
   display: flex;
@@ -49,7 +82,7 @@ img {
   width: 43%;
   height: 42px;
   line-height: 42px;
-  background: #fff;
+  background-color: #fff;
   color: #000;
   border-radius: 5px;
 }
@@ -78,7 +111,7 @@ img {
 #socials {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  background: #000;
+  background-color: #000;
   padding: 1.3rem 2rem;
   display: flex;
   justify-content: space-evenly;
@@ -86,4 +119,46 @@ img {
 }
 #socials a {
   color: white;
+}
+
+/* ================= */
+/*    light mode    */
+/* =============== */
+
+.container.light {
+  background-color: #efecff;
+}
+
+.toggler.light {
+  background-color: #000;
+}
+
+.toggler .circle.light {
+  background-color: #fff;
+}
+
+.card.light {
+  background-color: #f9f9f9;
+}
+
+.container.light,
+.card.light,
+#info.light .description a,
+#info.light p {
+  color: rgb(19, 19, 19);
+}
+
+.btn-primary.light,
+.btn-secondary.light {
+  background-color: #fff;
+  color: rgb(19, 19, 19);
+  border: 1px solid;
+}
+
+#socials.light {
+  background-color: #dae7e9;
+}
+
+#socials.light a {
+  color: #000;
 }

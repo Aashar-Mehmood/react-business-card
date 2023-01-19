@@ -1,11 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-export default function Info() {
+export default function Info(props) {
+  console.log(props);
   return (
-    <div id="info">
+    <div id="info" className={props.color === "light" ? "light" : ""}>
       <div className="description">
-        <h2 className="text-white">Aashar Mehmood</h2>
+        <h2>Aashar Mehmood</h2>
         <p>Front-End Developer</p>
         <a
           href="https://aashar-mehmood.github.io/AasharMehmood/"
@@ -15,12 +16,23 @@ export default function Info() {
         </a>
       </div>
       <div className="btns">
-        <a className="btn btn-secondary" href="mailto:aasharmehmood3@gmail.com">
+        <a
+          className={
+            props.color === "light"
+              ? "btn btn-secondary light"
+              : "btn btn-secondary"
+          }
+          href="mailto:aasharmehmood3@gmail.com"
+        >
           <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>{" "}
           <span>Email</span>
         </a>
         <a
-          className="btn btn-primary"
+          className={
+            props.color === "light"
+              ? "btn btn-primary light"
+              : "btn btn-primary"
+          }
           href="https://www.linkedin.com/in/aashar-mehmood-5641391a4"
         >
           <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>

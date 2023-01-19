@@ -5,9 +5,9 @@ import {
   faYoutube,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
-export default function Socials() {
+export default function Socials(props) {
   return (
-    <div id="socials">
+    <div id="socials" className={props.color === "light" ? "light" : ""}>
       <a href="https://codepen.io/aashar-mehmood">
         <FontAwesomeIcon icon={faCodepen}></FontAwesomeIcon>
       </a>
