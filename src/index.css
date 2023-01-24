@@ -2,7 +2,7 @@ a {
   text-decoration: none;
 }
 .container {
-  max-width: 440px;
+  width: 440px;
   margin: 20px auto;
   padding: 3rem;
   border-radius: 10px;
@@ -168,4 +168,20 @@ img {
 
 #socials.light a {
   color: #000;
+}
+
+@media screen and (max-width: 530px) {
+  .container {
+    width: 92%;
+    padding: 1.5rem;
+  }
+  .card {
+    padding: 1.2rem;
+  }
+}
+@media screen and (max-width: 380px) {
+  .container {
+    width: 96%;
+    padding: 1rem;
+  }
 }
