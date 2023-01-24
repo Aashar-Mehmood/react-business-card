@@ -33,13 +33,14 @@ a {
 }
 .toggler .circle {
   position: absolute;
-  left: 2px;
   top: 2px;
+  left: 2px;
   height: 26px;
   width: 26px;
   border-radius: 100%;
   transition: transform 0.4s linear;
   background-color: #000;
+  transform: translateX(0%);
 }
 
 .card {
@@ -126,7 +127,7 @@ img {
 /* =============== */
 
 .container.light {
-  background-color: #efecff;
+  background-color: #caeff1;
 }
 
 .toggler.light {
@@ -135,6 +136,8 @@ img {
 
 .toggler .circle.light {
   background-color: #fff;
+  left: 8px;
+  transform: translateX(100%);
 }
 
 .card.light {
@@ -156,7 +159,7 @@ img {
 }
 
 #socials.light {
-  background-color: #dae7e9;
+  background-color: #d1d1d1;
 }
 
 #socials.light a {
