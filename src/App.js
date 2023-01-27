@@ -6,23 +6,20 @@ import Interests from "./components/Interests";
 import Socials from "./components/Social";
 import { useState } from "react";
 export default function App() {
-  const [colorMode, setColorMode] = useState("dark");
+  const [darkMode, setDarkMode] = useState(true);
   function modeToggler() {
-    setColorMode((prevMode) => {
-      return prevMode === "dark" ? "light" : "dark";
-    });
+    setDarkMode((prevMode) => !prevMode);
   }
-  console.log(colorMode);
   return (
-    <div className={colorMode === "dark" ? "container" : "container light"}>
-      <Toggler color={colorMode} clickHandler={modeToggler} />
-      <div className={colorMode === "dark" ? "card" : "card light"}>
+    <div className={darkMode ? "container" : "container light"}>
+      <Toggler darkMode={darkMode} clickHandler={modeToggler} />
+      <div className={darkMode ? "card" : "card light"}>
         <Image />
-        <Info color={colorMode} />
+        <Info darkMode={darkMode} />
         <About />
         <Interests />
       </div>
-      <Socials color={colorMode} />
+      <Socials darkMode={darkMode} />
     </div>
   );
 }

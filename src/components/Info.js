@@ -2,9 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 export default function Info(props) {
-  console.log(props);
   return (
-    <div id="info" className={props.color === "light" ? "light" : ""}>
+    <div id="info" className={!props.darkMode ? "light" : ""}>
       <div className="description">
         <h2>Aashar Mehmood</h2>
         <p>Front-End Developer</p>
@@ -18,9 +17,7 @@ export default function Info(props) {
       <div className="btns">
         <a
           className={
-            props.color === "light"
-              ? "btn btn-secondary light"
-              : "btn btn-secondary"
+            !props.darkMode ? "btn btn-secondary light" : "btn btn-secondary"
           }
           href="mailto:aasharmehmood3@gmail.com"
         >
@@ -29,9 +26,7 @@ export default function Info(props) {
         </a>
         <a
           className={
-            props.color === "light"
-              ? "btn btn-primary light"
-              : "btn btn-primary"
+            !props.darkMode ? "btn btn-primary light" : "btn btn-primary"
           }
           href="https://www.linkedin.com/in/aashar-mehmood-5641391a4"
         >

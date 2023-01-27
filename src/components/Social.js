@@ -7,7 +7,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 export default function Socials(props) {
   return (
-    <div id="socials" className={props.color === "light" ? "light" : ""}>
+    <div id="socials" className={!props.darkMode ? "light" : ""}>
       <a href="https://codepen.io/aashar-mehmood">
         <FontAwesomeIcon icon={faCodepen}></FontAwesomeIcon>
       </a>
