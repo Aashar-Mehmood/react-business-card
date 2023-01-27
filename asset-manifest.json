@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-business-card/static/css/main.6a2156af.chunk.css",
-    "main.js": "/react-business-card/static/js/main.752e589e.chunk.js",
-    "main.js.map": "/react-business-card/static/js/main.752e589e.chunk.js.map",
+    "main.js": "/react-business-card/static/js/main.eb3b9a28.chunk.js",
+    "main.js.map": "/react-business-card/static/js/main.eb3b9a28.chunk.js.map",
     "runtime-main.js": "/react-business-card/static/js/runtime-main.4eedb0fa.js",
     "runtime-main.js.map": "/react-business-card/static/js/runtime-main.4eedb0fa.js.map",
     "static/js/2.9bdef93a.chunk.js": "/react-business-card/static/js/2.9bdef93a.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.4eedb0fa.js",
     "static/js/2.9bdef93a.chunk.js",
     "static/css/main.6a2156af.chunk.css",
-    "static/js/main.752e589e.chunk.js"
+    "static/js/main.eb3b9a28.chunk.js"
   ]
 }
